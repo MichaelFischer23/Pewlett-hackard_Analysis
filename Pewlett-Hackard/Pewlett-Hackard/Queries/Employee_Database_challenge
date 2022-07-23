@@ -1,0 +1,40 @@
+--Creating unique titles table
+SELECT DISTINCT ON (emp_no) 
+emp_no,
+first_name,
+last_name,
+title
+
+INTO unique_titles
+FROM retiring_employees
+WHERE to_date = '9999-01-01'
+ORDER BY emp_no ;
+
+-- Creating retiring_tiles table
+SELECT Count (title),
+title
+INTO retiring_titles
+FROM unique_titles
+GROUP BY title 
+ORDER BY COUNT(title) DESC; 
+
+--Creating mentorship Eligibility
+SELECT DISTINCT ON (emp.emp_no)
+emp.emp_no,
+emp.first_name,
+emp.last_name,
+emp.birth_date,
+DE.from_date,
+DE.to_date,
+ti.title
+INTO mentorship_eligibilty
+FROM employees AS emp
+
+JOIN dept_emp AS DE 
+ON emp.emp_no = DE.emp_no
+
+JOIN titles AS ti
+on emp.emp_no = ti.emp_no
+WHERE DE.to_date = '9999-01-01'
+AND emp.birth_date BETWEEN '1965-01-01' AND '1965-12-31'
+Order BY emp.emp_no;
