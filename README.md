@@ -27,4 +27,6 @@ on the company. The majority of vacancies will be in the production and developm
 
 ###### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 There are significantly less mentorship eligible employees in the company right now compared to the number that will be leaving. Although each person may be able to take
-more than one mentor at a time they will be streched very thin. ![mentor](https://user-images.githubusercontent.com/105613428/180627219-531efbdd-68cc-422c-a50b-ac437d5277dc.PNG)
+more than one mentor at a time they will be streched very thin. ALthought the departments that are losing the most people do have the largest number of potential mentors there are not enough poeple to mentor the next wave of employees. If you tale the development group as an example each person would have to mentor 21 people on average. The program may need to expands the credentials to make sure there are enough mentors to cover all the new employees.
+
+![mentor](https://user-images.githubusercontent.com/105613428/180627219-531efbdd-68cc-422c-a50b-ac437d5277dc.PNG)
